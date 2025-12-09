@@ -1,4 +1,4 @@
-MDFILE = $(shell ls *.md -R)
+MDFILE = $(shell find -name *.md)
 OBJ = $(patsubst %.md, %.html, $(MDFILE))
 
 all : $(OBJ)
